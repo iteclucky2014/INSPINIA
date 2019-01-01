@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=webapp/bower_components,webapp/src/jsp/common/common-header.jsp,webapp/src/jsp/common/menu.jsp,webapp/src/Angular,webapp/inspinia_admin-v2.5,webapp/vendors,webapp/src/jsp/common/common-footer.jsp,webapp/plugins,webapp/src/jsp/common/header.jsp,webapp/production/js,webapp/src/js
+validator.Unchecked=
