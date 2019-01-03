@@ -20,12 +20,14 @@
 		<include refid="Base_Column_List" />
 		from tuser
 		where ID = #{id,jdbcType=INT}
+		and IS_DELETE = '0'
 	</select>
 	<select id="selectByName" resultMap="BaseResultMap" parameterType="java.lang.String">
 		select
 		<include refid="Base_Column_List" />
 		from tuser
 		where NAME = #{name,jdbcType=VARCHAR}
+		and IS_DELETE = '0'
 	</select>
 	<delete id="deleteByPrimaryKey" parameterType="int">
 		delete from tuser
@@ -86,7 +88,7 @@
 	<!--</insert>-->
 	<update id="updateByPrimaryKeySelective" parameterType="com.web.business.login.model.User">
 		update tuser
-		<set>
+		<trim prefix="set" suffixOverrides=",">
 			<if test="pwd != null">
 				PWD = #{pwd,jdbcType=VARCHAR},
 			</if>
@@ -102,7 +104,7 @@
 			<if test="isDelete != null">
 				IS_DELETE = #{isDelete,jdbcType=CHAR},
 			</if>
-		</set>
+		</trim>
 		where ID = #{id,jdbcType=INT}
 	</update>
 	<!--<update id="updateByPrimaryKey" parameterType="com.web.business.login.model.User">-->
