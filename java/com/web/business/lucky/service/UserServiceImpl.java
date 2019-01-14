@@ -2,7 +2,7 @@ package com.web.business.lucky.service;
 
 import java.util.List;
 
-import com.web.business.lucky.dao.UserMapper;
+import com.web.business.lucky.dao.UserMapper1;
 import com.web.business.lucky.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,14 +10,14 @@ import org.springframework.stereotype.Service;
 @Service("userService")
 public class UserServiceImpl implements UserServiceI {
 
-	private UserMapper userMapper;
+	private UserMapper1 userMapper;
 
-	public UserMapper getUserMapper() {
+	public UserMapper1 getUserMapper() {
 		return userMapper;
 	}
 
 	@Autowired
-	public void setUserMapper(UserMapper userMapper) {
+	public void setUserMapper(UserMapper1 userMapper) {
 		this.userMapper = userMapper;
 	}
 

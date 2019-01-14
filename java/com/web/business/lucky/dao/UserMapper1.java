@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.web.business.lucky.model.User;
 
-public interface UserMapper {
+public interface UserMapper1 {
 	int deleteByPrimaryKey(String id);
 
 	int insert(User record);
