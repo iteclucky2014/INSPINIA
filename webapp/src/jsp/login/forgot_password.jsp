@@ -20,7 +20,7 @@
 
 <body class="gray-bg">
 
-    <div class="passwordBox animated fadeInDown">
+    <div class="passwordBox animated fadeInDown" style="padding-top: 400px;">
         <div class="row">
 
             <div class="col-md-12">

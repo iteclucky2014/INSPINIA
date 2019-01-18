@@ -20,7 +20,7 @@
 
 <body class="gray-bg">
 
-    <div class="middle-box text-center loginscreen animated fadeInDown">
+    <div class="middle-box text-center loginscreen animated fadeInDown" style="padding-top: 300px;">
         <div>
             <div>
 
