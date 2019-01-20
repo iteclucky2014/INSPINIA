@@ -29,20 +29,20 @@
             </div>
             <h3>Register to IN+</h3>
             <p>Create account to see it in action.</p>
-            <form class="m-t" role="form">
+            <form class="m-t" role="form" id="registerForm">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Username" required="">
+                    <input type="text" name="username" class="form-control" placeholder="Username" required="">
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email" required="">
+                    <input type="email" name="email" class="form-control" placeholder="Email" required="">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Password" required="">
+                    <input type="password" name="password" class="form-control" placeholder="Password" required="">
                 </div>
                 <%--<div class="form-group">--%>
                         <%--<div class="checkbox i-checks"><label> <input type="checkbox"><i></i> Agree the terms and policy </label></div>--%>
                 <%--</div>--%>
-                <a href="<%=basePath%>/src/jsp/template/empty_page.jsp" class="btn btn-primary block full-width m-b">Register</a>
+                <a id="register" href="javascript:void(0);" class="btn btn-primary block full-width m-b">Register</a>
 
                 <p class="text-muted text-center"><small>Already have an account?</small></p>
                 <a class="btn btn-sm btn-white btn-block" href="<%=basePath%>/src/jsp/login/login.jsp">Login</a>
@@ -57,6 +57,26 @@
             $('.i-checks').iCheck({
                 checkboxClass: 'icheckbox_square-green',
                 radioClass: 'iradio_square-green',
+            });
+
+            var validator = $("#registerForm").validate({
+                rules: {
+                    username: {
+                        required: true
+                    },
+                    email: {
+                        required: true
+                    },
+                    password: {
+                        required: true
+                    }
+                }
+            });
+            
+            $("#register").click(function() {
+                if (validator.form()) {
+                    window.location.href = "<%=basePath%>/src/jsp/template/empty_page.jsp";
+                }
             });
         });
     </script>

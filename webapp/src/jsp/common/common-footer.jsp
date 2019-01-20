@@ -17,6 +17,9 @@
 
     <!-- Peity -->
     <script src="<%=basePath%>/src/script/demo/peity-demo.js"></script>
+
+    <!-- Validate -->
+    <script src="<%=basePath%>/src/script/plugins/validate/jquery.validate.min.js"></script>
     
     <script type="text/javascript">
     	
