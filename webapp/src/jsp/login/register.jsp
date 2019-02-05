@@ -20,7 +20,7 @@
 
 <body class="gray-bg">
 
-    <div class="middle-box text-center loginscreen   animated fadeInDown" style="padding-top: 300px;">
+    <div class="middle-box text-center loginscreen animated fadeInDown" style="padding-top: 300px;">
         <div>
             <div>
 
@@ -31,13 +31,16 @@
             <p>Create account to see it in action.</p>
             <form class="m-t" role="form" id="registerForm">
                 <div class="form-group">
-                    <input type="text" name="username" class="form-control" placeholder="Username" required="">
+                    <input type="text" name="username" class="form-control" placeholder="Username">
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" class="form-control" placeholder="Email" required="">
+                    <input type="password" name="password" class="form-control" placeholder="Password">
                 </div>
                 <div class="form-group">
-                    <input type="password" name="password" class="form-control" placeholder="Password" required="">
+                    <input type="text" name="mobile" class="form-control" placeholder="Mobile">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="email" class="form-control" placeholder="Email">
                 </div>
                 <%--<div class="form-group">--%>
                         <%--<div class="checkbox i-checks"><label> <input type="checkbox"><i></i> Agree the terms and policy </label></div>--%>
@@ -64,10 +67,13 @@
                     username: {
                         required: true
                     },
-                    email: {
+                    password: {
                         required: true
                     },
-                    password: {
+                    mobile: {
+                        required: true
+                    },
+                    email: {
                         required: true
                     }
                 }

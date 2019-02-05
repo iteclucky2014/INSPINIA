@@ -76,7 +76,7 @@
     <location>/src/jsp/common/500.jsp</location>
   </error-page>
   <welcome-file-list>
-    <welcome-file>/src/jsp/login/login.jsp</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
   <session-config>
     <session-timeout>15</session-timeout>

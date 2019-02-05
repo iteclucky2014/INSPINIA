@@ -2362,7 +2362,7 @@ label.error {
   margin-left: 5px;
 }
 .form-control.error {
-  border: 1px dotted #cc5965;
+  border: 1px solid #cc5965;
 }
 /* ngGrid */
 .gridStyle {
