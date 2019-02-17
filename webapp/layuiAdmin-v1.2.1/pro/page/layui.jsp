@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>layout 后台大布局 - Layui</title>
-  <link rel="stylesheet" href="../../layui/css/layui.css">
+  <link rel="stylesheet" href="../../../src/layui/css/layui.css">
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
@@ -41,7 +41,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <dd><a href="">安全设置</a></dd>
         </dl>
       </li>
-      <li class="layui-nav-item"><a href="">退了</a></li>
+      <li class="layui-nav-item"><a href="user/login.jsp">退了</a></li>
     </ul>
   </div>
   
@@ -82,7 +82,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     © layui.com - 底部固定区域
   </div>
 </div>
-<script src="../../layui/layui.js"></script>
+<script src="../../../src/layui/layui.js"></script>
 <script>
 //JavaScript代码区域
 layui.use('element', function(){

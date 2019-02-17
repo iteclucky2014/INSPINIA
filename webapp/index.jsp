@@ -26,8 +26,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <li v-for="book in books">{{ book.name }}</li>
           <li></li>
           <li><a href="src/jsp/login/login.jsp">INSPINIA</a></li>
-          <li><a href="layuiAdmin-v1.2.1/views/user/login.html">layuiAdmin</a></li>
-          <li><a href="src/jsp/demo/layui.jsp">layout 后台大布局 - Layui</a></li>
+          <li><a href="layuiAdmin-v1.2.1/views/user/login.html">layuiAdmin 示例</a></li>
+          <li><a href="layuiAdmin-v1.2.1/pro/page/user/login.jsp">layuiAdmin 程序</a></li>
       </ul>
     </div>
     <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
