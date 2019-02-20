@@ -24,20 +24,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </a>
       </li>
       <li class="layui-nav-item" lay-unselect>
-        <a href="javascript:;" layadmin-event="refresh" title="刷新">
+        <a href="javascript:;" layadmin-event="refresh" title="刷新页面">
           <i class="layui-icon layui-icon-refresh-3"></i>
         </a>
       </li>
       <li class="layui-nav-item layui-hide-xs" lay-unselect>
-        <a href="javascript:;" layadmin-event="fullscreen">
+        <a href="javascript:;" layadmin-event="fullscreen" title="全屏显示">
           <i class="layui-icon layui-icon-screen-full"></i>
         </a>
       </li>
     </ul>
     <ul class="layui-nav layui-layout-right">
       <li class="layui-nav-item" lay-unselect>
-        <a href="javascript:;" layadmin-event="message" lay-text="消息中心">
-          <i class="layui-icon layui-icon-notice"></i>
+        <a href="javascript:;" layadmin-event="home" title="主页">
+          <i class="layui-icon layui-icon-home"></i>
         </a>
       </li>
       <li class="layui-nav-item">
@@ -52,7 +52,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </dl>
       </li>
       <li class="layui-nav-item layui-hide-xs" lay-unselect>
-        <a href="javascript:;" layadmin-event="about"><i class="layui-icon layui-icon-more-vertical"></i></a>
+        <a href="javascript:;" layadmin-event="about" title="关于"><i class="layui-icon layui-icon-more-vertical"></i></a>
       </li>
     </ul>
   </div>
