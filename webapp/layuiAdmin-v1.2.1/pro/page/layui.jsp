@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="GB18030"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -9,82 +9,94 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>layout ºóÌ¨´ó²¼¾Ö - Layui</title>
+  <title>layout åŽå°å¤§å¸ƒå±€ - Layui</title>
   <link rel="stylesheet" href="../../../src/layui/css/layui.css">
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
   <div class="layui-header">
-    <div class="layui-logo">layui ºóÌ¨²¼¾Ö</div>
-    <!-- Í·²¿ÇøÓò£¨¿ÉÅäºÏlayuiÒÑÓÐµÄË®Æ½µ¼º½£© -->
+    <div class="layui-logo" style="color: rgba(255,255,255,.8);">layuiAdmin</div>
+    <!-- å¤´éƒ¨åŒºåŸŸï¼ˆå¯é…åˆlayuiå·²æœ‰çš„æ°´å¹³å¯¼èˆªï¼‰ -->
     <ul class="layui-nav layui-layout-left">
-      <li class="layui-nav-item"><a href="">¿ØÖÆÌ¨</a></li>
-      <li class="layui-nav-item"><a href="">ÉÌÆ·¹ÜÀí</a></li>
-      <li class="layui-nav-item"><a href="">ÓÃ»§</a></li>
-      <li class="layui-nav-item">
-        <a href="javascript:;">ÆäËüÏµÍ³</a>
-        <dl class="layui-nav-child">
-          <dd><a href="">ÓÊ¼þ¹ÜÀí</a></dd>
-          <dd><a href="">ÏûÏ¢¹ÜÀí</a></dd>
-          <dd><a href="">ÊÚÈ¨¹ÜÀí</a></dd>
-        </dl>
+      <li class="layui-nav-item layadmin-flexible" lay-unselect>
+        <a href="javascript:;" layadmin-event="flexible" title="ä¾§è¾¹ä¼¸ç¼©">
+          <i class="layui-icon layui-icon-shrink-right" id="LAY_app_flexible"></i>
+        </a>
+      </li>
+      <li class="layui-nav-item" lay-unselect>
+        <a href="javascript:;" layadmin-event="refresh" title="åˆ·æ–°">
+          <i class="layui-icon layui-icon-refresh-3"></i>
+        </a>
+      </li>
+      <li class="layui-nav-item layui-hide-xs" lay-unselect>
+        <a href="javascript:;" layadmin-event="fullscreen">
+          <i class="layui-icon layui-icon-screen-full"></i>
+        </a>
       </li>
     </ul>
     <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item" lay-unselect>
+        <a href="javascript:;" layadmin-event="message" lay-text="æ¶ˆæ¯ä¸­å¿ƒ">
+          <i class="layui-icon layui-icon-notice"></i>
+        </a>
+      </li>
       <li class="layui-nav-item">
         <a href="javascript:;">
-          <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
-          ÏÍÐÄ
+          å·å¦¹ç»„åˆ
         </a>
         <dl class="layui-nav-child">
-          <dd><a href="">»ù±¾×ÊÁÏ</a></dd>
-          <dd><a href="">°²È«ÉèÖÃ</a></dd>
+          <dd><a href="">åŸºæœ¬èµ„æ–™</a></dd>
+          <dd><a href="">ä¿®æ”¹å¯†ç </a></dd>
+          <hr>
+          <dd layadmin-event="logout" style="text-align: center;"><a href="user/login.jsp">é€€å‡º</a></dd>
         </dl>
       </li>
-      <li class="layui-nav-item"><a href="user/login.jsp">ÍËÁË</a></li>
+      <li class="layui-nav-item layui-hide-xs" lay-unselect>
+        <a href="javascript:;" layadmin-event="about"><i class="layui-icon layui-icon-more-vertical"></i></a>
+      </li>
     </ul>
   </div>
   
   <div class="layui-side layui-bg-black">
     <div class="layui-side-scroll">
-      <!-- ×ó²àµ¼º½ÇøÓò£¨¿ÉÅäºÏlayuiÒÑÓÐµÄ´¹Ö±µ¼º½£© -->
+      <!-- å·¦ä¾§å¯¼èˆªåŒºåŸŸï¼ˆå¯é…åˆlayuiå·²æœ‰çš„åž‚ç›´å¯¼èˆªï¼‰ -->
       <ul class="layui-nav layui-nav-tree"  lay-filter="test">
         <li class="layui-nav-item layui-nav-itemed">
-          <a class="" href="javascript:;">ËùÓÐÉÌÆ·</a>
+          <a class="" href="javascript:;">æ‰€æœ‰å•†å“</a>
           <dl class="layui-nav-child">
-            <dd><a href="javascript:;">ÁÐ±íÒ»</a></dd>
-            <dd><a href="javascript:;">ÁÐ±í¶þ</a></dd>
-            <dd><a href="javascript:;">ÁÐ±íÈý</a></dd>
-            <dd><a href="">³¬Á´½Ó</a></dd>
+            <dd><a href="javascript:;">åˆ—è¡¨ä¸€</a></dd>
+            <dd><a href="javascript:;">åˆ—è¡¨äºŒ</a></dd>
+            <dd><a href="javascript:;">åˆ—è¡¨ä¸‰</a></dd>
+            <dd><a href="">è¶…é“¾æŽ¥</a></dd>
           </dl>
         </li>
         <li class="layui-nav-item">
-          <a href="javascript:;">½â¾ö·½°¸</a>
+          <a href="javascript:;">è§£å†³æ–¹æ¡ˆ</a>
           <dl class="layui-nav-child">
-            <dd><a href="javascript:;">ÁÐ±íÒ»</a></dd>
-            <dd><a href="javascript:;">ÁÐ±í¶þ</a></dd>
-            <dd><a href="">³¬Á´½Ó</a></dd>
+            <dd><a href="javascript:;">åˆ—è¡¨ä¸€</a></dd>
+            <dd><a href="javascript:;">åˆ—è¡¨äºŒ</a></dd>
+            <dd><a href="">è¶…é“¾æŽ¥</a></dd>
           </dl>
         </li>
-        <li class="layui-nav-item"><a href="">ÔÆÊÐ³¡</a></li>
-        <li class="layui-nav-item"><a href="">·¢²¼ÉÌÆ·</a></li>
+        <li class="layui-nav-item"><a href="javascript:;">äº‘å¸‚åœº</a></li>
+        <li class="layui-nav-item"><a href="javascript:;">å‘å¸ƒå•†å“</a></li>
       </ul>
     </div>
   </div>
   
   <div class="layui-body">
-    <!-- ÄÚÈÝÖ÷ÌåÇøÓò -->
-    <div style="padding: 15px;">ÄÚÈÝÖ÷ÌåÇøÓò</div>
+    <!-- å†…å®¹ä¸»ä½“åŒºåŸŸ -->
+    <div style="padding: 15px;">å†…å®¹ä¸»ä½“åŒºåŸŸ</div>
   </div>
   
-  <div class="layui-footer">
-    <!-- µ×²¿¹Ì¶¨ÇøÓò -->
-    0„8 layui.com - µ×²¿¹Ì¶¨ÇøÓò
+  <div class="layui-footer" style="text-align: center;">
+    <!-- åº•éƒ¨å›ºå®šåŒºåŸŸ -->
+    Â© 2019 JJ & MM Studio
   </div>
 </div>
 <script src="../../../src/layui/layui.js"></script>
 <script>
-//JavaScript´úÂëÇøÓò
+//JavaScriptä»£ç åŒºåŸŸ
 layui.use('element', function(){
   var element = layui.element;
 });

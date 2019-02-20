@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="GB18030"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -8,7 +8,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
   <meta charset="utf-8">
-  <title>µÇÂ¼ - layuiAdmin</title>
+  <title>ç™»å½• - layuiAdmin</title>
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -27,17 +27,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div class="layadmin-user-login-box layadmin-user-login-body layui-form">
       <div class="layui-form-item">
         <label class="layadmin-user-login-icon layui-icon layui-icon-username" for="LAY-user-login-username"></label>
-        <input type="text" name="username" id="LAY-user-login-username" lay-verify="required" placeholder="ÓÃ»§Ãû" class="layui-input">
+        <input type="text" name="username" id="LAY-user-login-username" lay-verify="required" placeholder="ç”¨æˆ·å" class="layui-input">
       </div>
       <div class="layui-form-item">
         <label class="layadmin-user-login-icon layui-icon layui-icon-password" for="LAY-user-login-password"></label>
-        <input type="password" name="password" id="LAY-user-login-password" lay-verify="required" placeholder="ÃÜÂë" class="layui-input">
+        <input type="password" name="password" id="LAY-user-login-password" lay-verify="required" placeholder="å¯†ç " class="layui-input">
       </div>
       <%--<div class="layui-form-item">
         <div class="layui-row">
           <div class="layui-col-xs7">
             <label class="layadmin-user-login-icon layui-icon layui-icon-vercode" for="LAY-user-login-vercode"></label>
-            <input type="text" name="vercode" id="LAY-user-login-vercode" lay-verify="required" placeholder="Í¼ĞÎÑéÖ¤Âë" class="layui-input">
+            <input type="text" name="vercode" id="LAY-user-login-vercode" lay-verify="required" placeholder="å›¾å½¢éªŒè¯ç " class="layui-input">
           </div>
           <div class="layui-col-xs5">
             <div style="margin-left: 10px;">
@@ -47,30 +47,30 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </div>
       </div>--%>
       <div class="layui-form-item" style="margin-bottom: 40px;">
-        <%--<input type="checkbox" name="remember" lay-skin="primary" title="¼Ç×¡ÃÜÂë">
-        <a href="forget.html" class="layadmin-user-jump-change layadmin-link" style="margin-top: 7px;">Íü¼ÇÃÜÂë£¿</a>--%>
+        <%--<input type="checkbox" name="remember" lay-skin="primary" title="è®°ä½å¯†ç ">
+        <a href="forget.html" class="layadmin-user-jump-change layadmin-link" style="margin-top: 7px;">å¿˜è®°å¯†ç ï¼Ÿ</a>--%>
       </div>
       <div class="layui-form-item">
-        <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="LAY-user-login-submit">µÇ Â¼</button>
+        <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="LAY-user-login-submit">ç™» å½•</button>
       </div>
       <%--<div class="layui-trans layui-form-item layadmin-user-login-other">
-        <label>Éç½»ÕËºÅµÇÈë</label>
+        <label>ç¤¾äº¤è´¦å·ç™»å…¥</label>
         <a href="javascript:;"><i class="layui-icon layui-icon-login-qq"></i></a>
         <a href="javascript:;"><i class="layui-icon layui-icon-login-wechat"></i></a>
         <a href="javascript:;"><i class="layui-icon layui-icon-login-weibo"></i></a>
 
-        <a href="reg.html" class="layadmin-user-jump-change layadmin-link">×¢²áÕÊºÅ</a>
+        <a href="reg.html" class="layadmin-user-jump-change layadmin-link">æ³¨å†Œå¸å·</a>
       </div>--%>
     </div>
   </div>
 
   <div class="layui-trans layadmin-user-login-footer">
 
-    <p>0„8 2019 <a href="http://localhost:8080/INSPINIA/">JJ & MM Studio</a></p>
+    <p>Â© 2019 <a href="http://localhost:8080/INSPINIA/">JJ & MM Studio</a></p>
     <%--<p>
-      <span><a href="http://www.layui.com/admin/#get" target="_blank">»ñÈ¡ÊÚÈ¨</a></span>
-      <span><a href="http://www.layui.com/admin/pro/" target="_blank">ÔÚÏßÑİÊ¾</a></span>
-      <span><a href="http://www.layui.com/admin/" target="_blank">Ç°Íù¹ÙÍø</a></span>
+      <span><a href="http://www.layui.com/admin/#get" target="_blank">è·å–æˆæƒ</a></span>
+      <span><a href="http://www.layui.com/admin/pro/" target="_blank">åœ¨çº¿æ¼”ç¤º</a></span>
+      <span><a href="http://www.layui.com/admin/" target="_blank">å‰å¾€å®˜ç½‘</a></span>
     </p>--%>
   </div>
 
@@ -92,9 +92,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script src="../../../layuiadmin/layui/layui.js"></script>
 <script>
     layui.config({
-        base: '../../../layuiadmin/' //¾²Ì¬×ÊÔ´ËùÔÚÂ·¾¶
+        base: '../../../layuiadmin/' //é™æ€èµ„æºæ‰€åœ¨è·¯å¾„
     }).extend({
-        index: 'lib/index' //Ö÷Èë¿ÚÄ£¿é
+        index: '../pro/script/index' //ä¸»å…¥å£æ¨¡å—
     }).use(['index', 'user'], function(){
         var $ = layui.$
             ,setter = layui.setter
@@ -105,30 +105,30 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
         form.render();
 
-        //Ìá½»
+        //æäº¤
         form.on('submit(LAY-user-login-submit)', function(obj){
 
-            //ÇëÇóµÇÈë½Ó¿Ú
+            //è¯·æ±‚ç™»å…¥æ¥å£
             admin.req({
-                url: layui.setter.base + 'json/user/login.js' //Êµ¼ÊÊ¹ÓÃÇë¸Ä³É·şÎñ¶ËÕæÊµ½Ó¿Ú
+                url: layui.setter.base + 'json/user/login.js' //å®é™…ä½¿ç”¨è¯·æ”¹æˆæœåŠ¡ç«¯çœŸå®æ¥å£
                 ,data: obj.field
                 ,done: function(res){
 
-                    //ÇëÇó³É¹¦ºó£¬Ğ´Èë access_token
+                    //è¯·æ±‚æˆåŠŸåï¼Œå†™å…¥ access_token
                     layui.data(setter.tableName, {
                         key: setter.request.tokenName
                         ,value: res.data.access_token
                     });
 
-                    location.href = '../layui.jsp'; //ºóÌ¨Ö÷Ò³
+                    location.href = '../layui.jsp'; //åå°ä¸»é¡µ
 
-                    //µÇÈë³É¹¦µÄÌáÊ¾ÓëÌø×ª
-                    /*layer.msg('µÇÈë³É¹¦', {
+                    //ç™»å…¥æˆåŠŸçš„æç¤ºä¸è·³è½¬
+                    /*layer.msg('ç™»å…¥æˆåŠŸ', {
                         offset: '15px'
                         ,icon: 1
                         ,time: 1000
                     }, function(){
-                        location.href = '../index.html'; //ºóÌ¨Ö÷Ò³
+                        location.href = '../index.html'; //åå°ä¸»é¡µ
                     });*/
                 }
             });
@@ -136,8 +136,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         });
 
 
-        //Êµ¼ÊÊ¹ÓÃÊ±¼ÇµÃÉ¾³ı¸Ã´úÂë
-        /*layer.msg('ÎªÁË·½±ãÑİÊ¾£¬ÓÃ»§ÃûÃÜÂë¿ÉËæÒâÊäÈë', {
+        //å®é™…ä½¿ç”¨æ—¶è®°å¾—åˆ é™¤è¯¥ä»£ç 
+        /*layer.msg('ä¸ºäº†æ–¹ä¾¿æ¼”ç¤ºï¼Œç”¨æˆ·åå¯†ç å¯éšæ„è¾“å…¥', {
             offset: '15px'
             ,icon: 1
         });*/

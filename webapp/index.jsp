@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="GB18030"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>Vue Ê¾Àı</title>
+    <title>Vue ç¤ºä¾‹</title>
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
@@ -26,8 +26,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <li v-for="book in books">{{ book.name }}</li>
           <li></li>
           <li><a href="src/jsp/login/login.jsp">INSPINIA</a></li>
-          <li><a href="layuiAdmin-v1.2.1/views/user/login.html">layuiAdmin Ê¾Àı</a></li>
-          <li><a href="layuiAdmin-v1.2.1/pro/page/user/login.jsp">layuiAdmin ³ÌĞò</a></li>
+          <li><a href="layuiAdmin-v1.2.1/views/user/login.html">layuiAdmin ç¤ºä¾‹</a></li>
+          <li><a href="layuiAdmin-v1.2.1/pro/page/user/login.jsp">layuiAdmin ç¨‹åº</a></li>
       </ul>
     </div>
     <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
@@ -36,9 +36,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	  el: '#app',
     	  data: {
     		  books: [
-    			  { name: '¡¶Vue.js ÊµÕ½¡·' },
-    			  { name: '¡¶Javascript ÓïÑÔ¾«´â¡·' },
-    			  { name: '¡¶Javascript ¸ß¼¶³ÌĞòÉè¼Æ¡·' }
+    			  { name: 'ã€ŠVue.js å®æˆ˜ã€‹' },
+    			  { name: 'ã€ŠJavascript è¯­è¨€ç²¾ç²¹ã€‹' },
+    			  { name: 'ã€ŠJavascript é«˜çº§ç¨‹åºè®¾è®¡ã€‹' }
     		  ]
     	  }
       });
