@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>layuiAdmin - 后台模板管理系统</title>
-  <link rel="stylesheet" href="../../../src/layui/css/layui.css">
+  <link rel="stylesheet" href="../../layui/css/layui.css">
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
@@ -48,7 +48,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <dd><a href="">基本资料</a></dd>
           <dd><a href="">修改密码</a></dd>
           <hr>
-          <dd layadmin-event="logout" style="text-align: center;"><a href="user/login.jsp">退出</a></dd>
+          <dd layadmin-event="logout" style="text-align: center;"><a href="">退出</a></dd>
         </dl>
       </li>
       <li class="layui-nav-item layui-hide-xs" lay-unselect>
@@ -94,7 +94,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     © 2019 JJ & MM Studio
   </div>
 </div>
-<script src="../../../src/layui/layui.js"></script>
+<script src="../../layui/layui.js"></script>
 <script>
 //JavaScript代码区域
 layui.use('element', function(){

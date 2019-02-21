@@ -27,7 +27,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <li></li>
           <li><a href="src/jsp/login/login.jsp">INSPINIA</a></li>
           <li><a href="layuiAdmin-v1.2.1/views/user/login.html">layuiAdmin 示例</a></li>
-          <li><a href="layuiAdmin-v1.2.1/pro/page/user/login.jsp">layuiAdmin 程序</a></li>
+          <li><a href="layuiAdmin-v1.2.1/page/user/login.html">layuiAdmin 程序</a></li>
+          <li><a href="src/jsp/demo/layui.jsp">layuiAdmin 后台布局</a></li>
       </ul>
     </div>
     <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
